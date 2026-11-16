@@ -27,6 +27,9 @@ npm run preview
 ```
 Hasil build berada di folder `dist/`.
 
+## Deploy ke GitHub Pages
+Workflow GitHub Actions membangun aplikasi dan menerbitkan folder `dist/` ke GitHub Pages setiap ada push ke branch `main`. Pada pengaturan repository, buka **Settings → Pages → Build and deployment**, lalu pilih **GitHub Actions** sebagai source. Untuk repository project page ini, alamat situs menggunakan path `/AXIOM-OS/`.
+
 ## Supabase, akun, dan sinkronisasi
 Frontend memakai URL project dan publishable key dari `.env.local` (file ini diabaikan Git). Salin `.env.example` sebagai `.env.local` untuk mengisi konfigurasi project lain. Publishable key memang dipakai di browser; keamanan data bergantung pada RLS, bukan pada penyembunyian key tersebut.
 
